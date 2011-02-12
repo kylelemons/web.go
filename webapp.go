@@ -76,7 +76,7 @@ func launchBrowser(addr string) {
 			log.Printf("Killed browser (%d)\n", pid)
 		}()
 	} else {
-		log.Printf("Press ^C to exit\n", pid)
+		log.Printf("Press ^C to exit\n")
 		for q := false; !q; {
 			select {
 			//case q = <-gwa.quit:
